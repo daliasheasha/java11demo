@@ -10,7 +10,7 @@ repositories {
 dependencies {
     implementation 'com.google.guava:guava:28.2-jre'
     implementation 'org.ow2.asm:asm-all:6.0_BETA'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit-junit-4.13'
 }
 
 application {
