@@ -6,6 +6,6 @@ import org.junit.Test;
 
 public class MyAppTest {
     @Test public void testMyApp() {
-        assertTrue("I wonder why my tests keep passing", true);
+        assertTrue("I wonder why my tests keep passing!!", true);
     }
 }
