@@ -45,7 +45,7 @@ public class MyApp {
 		BASE64Encoder encoder = new BASE64Encoder();
 		String encodedString = encoder.encode(originalString.getBytes());
 		System.out.println("Original String: " + originalString);
-		System.out.println("Encoded String: " + encodedString);
+		System.out.println("Encoded String:  " + encodedString);
 		System.out.println("============================================");
 		return encodedString;
 	}
@@ -59,8 +59,8 @@ public class MyApp {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Encoded String: " + encodedString);
-		System.out.println("Decoded String: " + decodedString);
+		System.out.println("Encoded String:  " + encodedString);
+		System.out.println("Decoded String:  " + decodedString);
 		System.out.println("============================================");
 		return decodedString;
 	}
