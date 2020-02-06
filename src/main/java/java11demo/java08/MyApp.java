@@ -29,12 +29,12 @@ public class MyApp {
 
 	public static void writeXML(Weather weather) {
 		try {
-			JAXBContext context = JAXBContext.newInstance(Weather.class);
+			JAXBContext jaxbContext = JAXBContext.newInstance(Weather.class);
 
-			Marshaller marshaller = context.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-			marshaller.marshal(weather, System.out);
+			jaxbMarshaller.marshal(weather, System.out);
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
@@ -43,7 +43,7 @@ public class MyApp {
 
 	public static String encode(String originalString) {
 		BASE64Encoder encoder = new BASE64Encoder();
-		String encodedString = new BASE64Encoder().encode(originalString.getBytes());
+		String encodedString = encoder.encode(originalString.getBytes());
 		System.out.println("Original String: " + originalString);
 		System.out.println("Encoded String: " + encodedString);
 		System.out.println("============================================");
