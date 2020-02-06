@@ -9,9 +9,13 @@ repositories {
 
 dependencies {
     implementation 'com.google.guava:guava:28.2-jre'
-    testImplementation 'junit-junit-4.13'
+    testImplementation 'junit:junit:4.10'
+    
+    // JAXB dependencies (Required for Java 11+)
+    // implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+    // implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
 }
 
 application {
-    mainClassName = 'java11demo.MyApp'
+    mainClassName = 'java11demo.java08.MyApp'
 }
