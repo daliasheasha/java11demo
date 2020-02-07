@@ -9,7 +9,7 @@ repositories {
 
 dependencies {
     implementation 'com.google.guava:guava:28.2-jre'
-    testImplementation 'junit:junit:4.10'
+    testImplementation 'junit:junit:4.13'
     
     // JAXB dependencies (Required for Java 11+)
     // implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
