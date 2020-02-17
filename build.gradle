@@ -19,3 +19,9 @@ dependencies {
 application {
     mainClassName = 'java11demo.java08.MyApp'
 }
+
+jar {
+    manifest {
+        attributes "Main-Class": mainClassName
+    }
+}
