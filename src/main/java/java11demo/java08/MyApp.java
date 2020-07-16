@@ -17,7 +17,7 @@ public class MyApp {
 		rochester.setCity("Rochester");
 		rochester.setState("Minnesota");
 		rochester.setCountry("USA");
-		rochester.setForecast("RAINY");
+		rochester.setForecast("SUPER WARM");
 
 		// Convert my Rochester object to XML
 		writeXML(rochester);
