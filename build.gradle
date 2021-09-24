@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.google.guava:guava:28.2-jre'
+    implementation 'com.google.guava:guava:31.0-jre'
     testImplementation 'junit:junit:4.10'
     
     // JAXB dependencies (Required for Java 11+)
