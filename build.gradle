@@ -1,19 +1,28 @@
 plugins {
     id 'java'
     id 'application'
+    id("org.openrewrite.rewrite") version("5.28.0")
 }
 
 repositories {
     jcenter()
+    maven {
+        url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+    }
 }
 
 dependencies {
     implementation 'com.google.guava:guava:28.2-jre'
     testImplementation 'junit:junit:4.10'
-    
+    rewrite("org.openrewrite.recipe:rewrite-migrate-java:1.11.0-SNAPSHOT")
+
     // JAXB dependencies (Required for Java 11+)
     // implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
     // implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
+}
+
+rewrite {
+    activeRecipe("org.openrewrite.java.migrate.UseJavaUtilBase64")
 }
 
 application {
